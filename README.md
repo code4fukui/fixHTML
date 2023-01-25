@@ -7,7 +7,7 @@ fix HTML and script in HTML
 ```JavaScript
 import { fixHTML } from "https://code4fukui.github.io/fixHTML/fixHTML.js";
 
-console.log(fixHTML("＜HTML＞"));
+console.log(fixHTML("＜html＞"));
 ```
 
 ## Dependencies

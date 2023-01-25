@@ -1,3 +1,4 @@
+import { ZenkakuAlpha } from "https://code4fukui.github.io/mojikiban/ZenkakuAlpha.js";
 import { esreform } from "https://code4fukui.github.io/esreform/esreform.js";
 
 export const fixHTML = (src) => {
