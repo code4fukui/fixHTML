@@ -13,3 +13,7 @@ console.log(fixMyHTML("＜html＞"));
 ## Dependencies
 
 - [esreform](https://github.com/code4fukui/esreform/)
+
+## Related
+
+- [fixmyjs](https://github.com/code4fukui/fixmyjs/)
