@@ -1,6 +1,6 @@
 import * as t from "https://deno.land/std/testing/asserts.ts";
-import { fixHTML } from "./fixHTML.js";
+import { fixMyHTML } from "./fixMyHTML.js";
 
 Deno.test("simple", () => {
-  t.assertEquals(fixHTML("＜html＞"), "<html>");
+  t.assertEquals(fixMyHTML("＜html＞"), "<html>");
 });

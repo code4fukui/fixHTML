@@ -1,7 +1,7 @@
 import { ZenkakuAlpha } from "https://code4fukui.github.io/mojikiban/ZenkakuAlpha.js";
 import { esreform } from "https://code4fukui.github.io/esreform/esreform.js";
 
-export const fixHTML = (src) => {
+export const fixMyHTML = (src) => {
   const s = ZenkakuAlpha.toHan(src);
   let n = 0;
   const ss = [];
