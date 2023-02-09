@@ -1,6 +1,14 @@
 import { ZenkakuAlpha } from "https://code4fukui.github.io/mojikiban/ZenkakuAlpha.js";
 import { esreform } from "https://code4fukui.github.io/esreform/esreform.js";
 
+const reform = (s) => {
+  try {
+    return esreform(s);
+  } catch (e) {
+    return s;
+  }
+};
+
 export const fixMyHTML = (src) => {
   const s = ZenkakuAlpha.toHan(src);
   let n = 0;
@@ -22,7 +30,7 @@ export const fixMyHTML = (src) => {
     if (src.trim() == "") {
       ss.push(s.substring(n, m2 + 9));
     } else {
-      const src2 = src.trim() == "" ? src : esreform(src);
+      const src2 = src.trim() == "" ? src : reform(src);
       ss.push(s.substring(n, k + 1) + "\n");
       ss.push(src2);
       ss.push("\n</" + "script>");
