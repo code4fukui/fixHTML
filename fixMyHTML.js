@@ -32,7 +32,7 @@ export const fixMyHTML = (src) => {
     } else {
       const src2 = src.trim() == "" ? src : reform(src);
       ss.push(s.substring(n, k + 1) + "\n");
-      ss.push(src2);
+      ss.push(src2.trim());
       ss.push("\n</" + "script>");
     }
     n = m2 + 9;
